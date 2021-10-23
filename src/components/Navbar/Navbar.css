@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+    line-height: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.navlink{
+    text-decoration: none;
+    margin-right: 10px;
+}
