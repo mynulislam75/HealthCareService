@@ -1,10 +1,11 @@
 import React from 'react';
+import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
 import './Login.css'
 
 const Login = () => {
 
-    const { handleGoogleSignIn, user, handleEmail, handlePassword, handleResigterWithEmail, handleLoginWithEmail, handleToggle, isLogin,handleRegistrationOrLogin } = useFirebase();
+    const { handleGoogleSignIn, user, handleEmail, handlePassword, handleResigterWithEmail, handleLoginWithEmail, handleToggle, isLogin,handleRegistrationOrLogin } = useAuth();
     return (
         <div className="login">
             <form onSubmit={handleRegistrationOrLogin}>

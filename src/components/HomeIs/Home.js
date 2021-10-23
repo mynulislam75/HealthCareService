@@ -64,7 +64,7 @@ const Home = () => {
                             <h2>Name:{service.name}</h2>
                             <h4>Price:{service.price}</h4>
                             <p>{service.description}</p>
-                            <Link to={`/services/${service.price}`}>SEE DETAILS</Link>
+                            <Link to={`/services/${service.name}`}>SEE DETAILS</Link>
                             
                     </div>)
                 }

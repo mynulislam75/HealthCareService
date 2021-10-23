@@ -8,10 +8,13 @@ import About from './components/About/About';
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import Singleservice from './components/Singleservice/Singleservice';
+import AuthProvider from './context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
+
+      <AuthProvider>
       <BrowserRouter>
       <Navbar></Navbar>
         <Switch>
@@ -35,6 +38,8 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
+      </AuthProvider>
+      
     </div>
   );
 }

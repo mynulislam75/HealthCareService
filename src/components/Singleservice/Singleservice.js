@@ -3,24 +3,28 @@ import { useParams } from 'react-router';
 
 const Singleservice = () => {
 
-    const [single, setSingle] = useState([]);
+    // const [singleData, setSingleData] = useState([]);
+    const [singleInfo, setSingleInfo] = useState([]);
 
+    const { serviceId } = useParams();
     useEffect(() => {
         fetch('/singleservice.JSON')
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data =>setSingleInfo(data))
     }, [])
 
-    const { serviceId } = useParams();
 
-    //    const whatt= single.find(testt=>{
-    //         return testt.id=serviceId;
-    //     })
-    //     console.log(whatt)
+    // console.log(single)
+    // console.log(serviceId)
+
+    //  singleData.find(singledetails=>{
+    //     setSingleInfo(singledetails.name===serviceId); 
+    //    })
+
 
     return (
         <div>
-            <h1>abcd whatt</h1>
+            <h1>abcd{singleInfo.name}</h1>
         </div>
     );
 };
