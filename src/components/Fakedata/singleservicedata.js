@@ -1,64 +1,64 @@
 
-const servicesData = [
+const singleServicesData = [
     {
-    name: "Ear nose treatment",
-    price: 11,
+    name: "GHFGHFGFGH",
+    price: 7781,
     id:{name:"ahmed ali",Age:22,descrip:"our bouyy okkk"},
     description: "If either of these events, campus must contact the Department of Safety and Professional Services at 608-266-2112 during normal business hours.  During non-business hours, contact the State",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxzsVO0rHqGJiAsAvBtR-MCPVqVKpeioEZQ&usqp=CAU"
 },
     {
-    name: "ABCD",
-    price: 51,
+    name: "GYGHHGHJD",
+    price: 81,
     id:{name:"ahmed ali",Age:22,descrip:"our bouyy okkk"},
     description: "If either of these events, campus must contact the Department of Safety and Professional Services at 608-266-2112 during normal business hours.  During non-business hours, contact the State",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxzsVO0rHqGJiAsAvBtR-MCPVqVKpeioEZQ&usqp=CAU"
 },
     {
-    name: "BCDF",
-    price: 41,
+    name: "JHHJBHJF",
+    price: 991,
     id:{name:"ahmed ali",Age:22,descrip:"our bouyy okkk"},
     description: "If either of these events, campus must contact the Department of Safety and Professional Services at 608-266-2112 during normal business hours.  During non-business hours, contact the State",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxzsVO0rHqGJiAsAvBtR-MCPVqVKpeioEZQ&usqp=CAU"
 },
     {
-    name: "EDFDHD",
-    price: 14,
+    name: "EDFDKJKJKHD",
+    price: 9814,
     id:{name:"ahmed ali",Age:22,descrip:"our bouyy okkk"},
     description: "If either of these events, campus must contact the Department of Safety and Professional Services at 608-266-2112 during normal business hours.  During non-business hours, contact the State",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxzsVO0rHqGJiAsAvBtR-MCPVqVKpeioEZQ&usqp=CAU"
 },
     {
-    name: "KJLKGHKFH",
-    price: 18,
+    name: "KJLKGHKKHKKJKJFH",
+    price: 18999,
     id:{name:"ahmed ali",Age:22,descrip:"our bouyy okkk"},
     description: "If either of these events, campus must contact the Department of Safety and Professional Services at 608-266-2112 during normal business hours.  During non-business hours, contact the State",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxzsVO0rHqGJiAsAvBtR-MCPVqVKpeioEZQ&usqp=CAU"
 },
     {
-    name: "KFKJFFKN",
-    price: 33,
+    name: "KFKJFFJLKJLJLKKN",
+    price: 3898983,
     id:{name:"ahmed ali",Age:22,descrip:"our bouyy okkk"},
     description: "If either of these events, campus must contact the Department of Safety and Professional Services at 608-266-2112 during normal business hours.  During non-business hours, contact the State",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxzsVO0rHqGJiAsAvBtR-MCPVqVKpeioEZQ&usqp=CAU"
 },
     {
-    name: "KLFKEFKNKF",
-    price: 331,
+    name: "KLFKEFKNKJLJKLKJJKF",
+    price: 3318778,
     id:{name:"ahmed ali",Age:22,descrip:"our bouyy okkk"},
     description: "If either of these events, campus must contact the Department of Safety and Professional Services at 608-266-2112 during normal business hours.  During non-business hours, contact the State",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxzsVO0rHqGJiAsAvBtR-MCPVqVKpeioEZQ&usqp=CAU"
 },
     {
-    name: "RIJFRGTRGT",
-    price: 34877384,
+    name: "RIJJHHJGHFRGTRGT",
+    price: 348777878384,
     id:{name:"ahmed ali",Age:22,descrip:"our bouyy okkk"},
     description: "If either of these events, campus must contact the Department of Safety and Professional Services at 608-266-2112 during normal business hours.  During non-business hours, contact the State",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxzsVO0rHqGJiAsAvBtR-MCPVqVKpeioEZQ&usqp=CAU"
 },
     {
-    name: "RKFJRKFJK",
-    price: 1123,
+    name: "RKFKHKJHJRKFJK",
+    price: 11676723,
     id:{name:"ahmed ali",Age:22,descrip:"our bouyy okkk"},
     description: "If either of these events, campus must contact the Department of Safety and Professional Services at 608-266-2112 during normal business hours.  During non-business hours, contact the State",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPxzsVO0rHqGJiAsAvBtR-MCPVqVKpeioEZQ&usqp=CAU"

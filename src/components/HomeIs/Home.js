@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Home.css'
 
 const Home = () => {
@@ -63,7 +64,7 @@ const Home = () => {
                             <h2>Name:{service.name}</h2>
                             <h4>Price:{service.price}</h4>
                             <p>{service.description}</p>
-                            <button>Get This</button>
+                            <Link to={`/services/${service.price}`}>SEE DETAILS</Link>
                             
                     </div>)
                 }

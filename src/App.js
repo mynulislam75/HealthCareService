@@ -7,6 +7,7 @@ import Doctors from './components/Doctors/Doctors';
 import About from './components/About/About';
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
+import Singleservice from './components/Singleservice/Singleservice';
 
 function App() {
   return (
@@ -17,8 +18,11 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/services">
+          <Route exact path="/services">
             <Services></Services>
+          </Route>
+          <Route path="/services/:serviceId">
+           <Singleservice></Singleservice>
           </Route>
           <Route path="/doctors">
             <Doctors></Doctors>
