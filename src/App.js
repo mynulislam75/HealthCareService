@@ -9,6 +9,7 @@ import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import Singleservice from './components/Singleservice/Singleservice';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -24,12 +25,12 @@ function App() {
           <Route exact path="/services">
             <Services></Services>
           </Route>
-          <Route path="/services/:serviceId">
+          <PrivateRoute path="/services/:serviceId">
            <Singleservice></Singleservice>
-          </Route>
-          <Route path="/doctors">
+          </PrivateRoute>
+          <PrivateRoute path="/doctors">
             <Doctors></Doctors>
-          </Route>
+          </PrivateRoute>
           <Route path="/about">
             <About></About>
           </Route>
@@ -39,7 +40,7 @@ function App() {
         </Switch>
       </BrowserRouter>
       </AuthProvider>
-      
+
     </div>
   );
 }
