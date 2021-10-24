@@ -9,11 +9,14 @@ const Navbar = () => {
     const { handleSignOut, user } = useAuth();
     return (
         <div className="navbar">
-            <div>
+
+           
+
+            <div className="">
                 <h1>MEDIPATH</h1>
             </div>
 
-            <div className="navlink-container">
+            <div className="navlink-containe">
                 <NavLink className="navlink" to="/home">HOME</NavLink>
                 <NavLink className="navlink" to="/services">SERVICES</NavLink>
                 <NavLink className="navlink" to="/doctors">DOCTORS</NavLink>
@@ -23,13 +26,15 @@ const Navbar = () => {
                     user.email && <span>Hello,{user.displayName}</span>
                 }
                 {
-                    user.email ? <button onClick={handleSignOut}>Log Out</button>
+                    user.email ? <button onClick={handleSignOut}>LOG OUT</button>
                         :
-                        <NavLink className="navlink" to="/login">Log In</NavLink>
+                        <NavLink className="navlink" to="/login">LOG IN</NavLink>
                 }
 
 
+            
             </div>
+            
         </div>
 
     );

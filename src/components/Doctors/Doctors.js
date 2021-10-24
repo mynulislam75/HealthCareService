@@ -9,17 +9,24 @@ const Doctors = () => {
             .then(data => setExtraService(data))
     }, [])
     return (
-        <div>
-             {
-                extraService.map(singleExtraService =>
-                    <div>
-                        <img className="img-fluid" src={singleExtraService.img} alt="" />
-                        <h2>{singleExtraService.name}</h2>
-                        <p>{singleExtraService.description}</p>
+        <div className="container">
+            <div className="row">
 
-                    </div>
-                )
-            }
+
+                {
+                    extraService.map(singleExtraService =>
+                        <div className="col-md-6 col-lg-4">
+                            <div className="p-3 m-2 border">
+                                <div className="img-container">
+                                    <img className="img-fluid" src={singleExtraService.img} alt="" />
+                                </div>
+                                <h2>{singleExtraService.name}</h2>
+                                <p>{singleExtraService.description}</p>
+                            </div>
+                        </div>
+                    )
+                }
+            </div>
         </div>
     );
 };

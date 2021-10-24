@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import './Home.css'
 
 const Home = () => {
 
-
     const [services, setServices] = useState([])
-
     useEffect(() => {
         fetch('./servicesdata.JSON')
             .then(res => res.json())
@@ -16,59 +15,54 @@ const Home = () => {
 
     return (
         <div>
-            <div className="carousel-container container">
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 imges"
-                            src="https://media.istockphoto.com/photos/medical-technology-background-picture-id1255646957"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 h-50 imges"
-                            src="https://media.istockphoto.com/photos/medical-technology-background-picture-id1255646957"
-                            alt="Second slide"
-                        />
 
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 h-50 imges"
-                            src="https://media.istockphoto.com/photos/medical-technology-background-picture-id1255646957"
-                            alt="Third slide"
-                        />
+            {/* BANNER PART */}
+            <div className="banner-portion">
 
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">jhfghfhf</div>
+                        <div className="col-md-6">guiyuyudfd</div>
+                    </div>
+                </div>
+
             </div>
 
-            <div className="services-container row container">
-                {
-                    services.map(service => <div className="singleService col-lg-4">
 
-                            <img src={service.img} alt="" />
-                            <h2>Name:{service.name}</h2>
-                            <h4>Price:{service.price}</h4>
-                            <p>{service.description}</p>
-                            <Link to={`/services/${service.name}`}>SEE DETAILS</Link>
-                            
-                    </div>)
-                }
+            {/* OUR SERVICES DECLARATION */}
+            <div className="d-flex align-items-center justify-content-center mt-5 mb-3">
+                <div>
+                    <h1>WHAT WE PROVIDE</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat incidunt laudantium optio quis nesciunt id illo possimus facilis sit quae?</p>
+                </div>
+            </div>
 
+
+            {/* SERVICES DATA AND INFORMATION */}
+
+            <div className="container">
+                <div className="row">
+                    {
+                        services.map(service => <div className="col-md-6 col-lg-4">
+                            <div className="p-3 m-2 border">
+
+                                <div className="img-container">
+                                    <img src={service.img} alt="" />
+                                </div>
+                                <div>
+                                    <h2>{service.name}</h2>
+                                    <h4>{service.price}</h4>
+                                    <p>{service.description}</p>
+                                    <Link className="link-btn" to={`/services/${service.name}`}>SEE DETAILS</Link>
+                                </div>
+
+
+                            </div>
+
+                        </div>)
+                    }
+
+                </div>
             </div>
 
         </div>

@@ -19,6 +19,9 @@ function App() {
       <BrowserRouter>
       <Navbar></Navbar>
         <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
           <Route path="/home">
             <Home></Home>
           </Route>
@@ -28,9 +31,9 @@ function App() {
           <PrivateRoute path="/services/:serviceId">
            <Singleservice></Singleservice>
           </PrivateRoute>
-          <PrivateRoute path="/doctors">
+          <Route path="/doctors">
             <Doctors></Doctors>
-          </PrivateRoute>
+          </Route>
           <Route path="/about">
             <About></About>
           </Route>
