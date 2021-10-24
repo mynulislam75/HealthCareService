@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
 import './Login.css'
@@ -6,6 +7,18 @@ import './Login.css'
 const Login = () => {
 
     const { handleGoogleSignIn, user, handleEmail, handlePassword, handleResigterWithEmail, handleLoginWithEmail, handleToggle, isLogin, handleRegistrationOrLogin } = useAuth();
+
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/services/:serviceId';
+
+    const handleGoogleLogin = () => {
+        handleGoogleSignIn()
+            .then(result => {
+                history.push(redirect_uri);
+            })
+    }
+
 
     return (
         <div className="login">
@@ -37,7 +50,7 @@ const Login = () => {
                     </div>
 
 
-                    <button onClick={handleGoogleSignIn}>Google Sign In</button>
+                    <button onClick={handleGoogleLogin}>Google Sign In</button>
                 </div>
             </form>
 

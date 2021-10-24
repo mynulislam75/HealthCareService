@@ -1,10 +1,11 @@
 
 .login{
     text-align: center; 
+    background-color: lemonchiffon;
 }
 
 .form-container{
-    background-color: rgb(106, 184, 32);
+    
 }
 
 input[type=text], input[type=password] {

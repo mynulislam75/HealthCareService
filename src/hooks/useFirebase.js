@@ -38,10 +38,10 @@ const useFirebase = () => {
 
 
         if (isLogin) {
-            handleLoginWithEmail(email, password)
+            handleResigterWithEmail(email, password)
         }
         else {
-            handleResigterWithEmail(email, password)
+            handleLoginWithEmail(email, password)
         }
 
 
@@ -53,7 +53,8 @@ const useFirebase = () => {
     const handleResigterWithEmail = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
-                console.log(result.user)
+                const user=result.user;
+                setUser(result.user)
             })
             .catch(error => {
                 const errorMessage = error.message;
@@ -65,7 +66,8 @@ const useFirebase = () => {
     const handleLoginWithEmail = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                console.log(result.user)
+                const user=result.user;
+                setUser(result.user)
             })
             .catch(error => {
                 const errorMessage = error.message;
@@ -78,10 +80,10 @@ const useFirebase = () => {
 
     // SIGN IN WITH GOOGLE
     const handleGoogleSignIn = () => {
-        signInWithPopup(auth, provider)
-            .then(result => {
-                setUser(result.user)
-            })
+       return signInWithPopup(auth, provider);
+            // .then(result => {
+            //     setUser(result.user)
+            // })
     }
 
 
