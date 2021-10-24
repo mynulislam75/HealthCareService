@@ -80,10 +80,10 @@ const useFirebase = () => {
 
     // SIGN IN WITH GOOGLE
     const handleGoogleSignIn = () => {
-       return signInWithPopup(auth, provider);
-            // .then(result => {
-            //     setUser(result.user)
-            // })
+       return signInWithPopup(auth, provider)
+       .then(result => {
+        setUser(result.user)
+    })
     }
 
 

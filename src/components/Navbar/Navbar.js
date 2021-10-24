@@ -7,6 +7,7 @@ import './Navbar.css'
 const Navbar = () => {
 
     const { handleSignOut, user } = useAuth();
+    console.log(user)
     return (
         <div className="navbar">
 
