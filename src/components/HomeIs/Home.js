@@ -17,17 +17,15 @@ const Home = () => {
         <div>
 
             {/* BANNER PART */}
-            <div className="banner-portion">
 
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6">jhfghfhf</div>
-                        <div className="col-md-6">guiyuyudfd</div>
-                    </div>
+
+            <div className="banner-section">
+                <div className="description-text position-absolute bottom-0 p-3">
+                    <h1>WE HAVE OUR OWN SOMETHING</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, praesentium. Ad, nam! Quas at ipsa, labore iste aliquid quae aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odit voluptatem nihil corporis velit praesentium quo aspernatur et cum ipsa consequatur minima, recusandae adipisci exercitationem, aperiam vitae doloribus voluptates labore.</p>
+                    <button className="bg-danger">JOIN US</button>
                 </div>
-
             </div>
-
 
             {/* OUR SERVICES DECLARATION */}
             <div className="d-flex align-items-center justify-content-center mt-5 mb-3">
