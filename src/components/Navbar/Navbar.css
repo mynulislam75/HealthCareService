@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.navbar-img{
+    width: 180px;
+}
+
 .navlink{
     text-decoration: none;
     margin-right: 10px;

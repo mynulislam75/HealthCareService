@@ -33,7 +33,7 @@ const Singleservice = () => {
 
     return (
         <div>
-            <h1>abcd:{findData?.name}</h1>
+            <h1>name:{findData?.name}</h1>
         </div>
     );
 };

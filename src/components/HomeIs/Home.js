@@ -20,17 +20,20 @@ const Home = () => {
 
 
             <div className="banner-section">
-                <div className="description-text position-absolute bottom-0 p-3">
+                <div className="row container">
+                <div className="description-text position-absolute bottom-0 p-3 col-lg-6 col-md-6 col-sm-6">
                     <h1>WE HAVE OUR OWN SOMETHING</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, praesentium. Ad, nam! Quas at ipsa, labore iste aliquid quae aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odit voluptatem nihil corporis velit praesentium quo aspernatur et cum ipsa consequatur minima, recusandae adipisci exercitationem, aperiam vitae doloribus voluptates labore.</p>
-                    <button className="bg-danger">JOIN US</button>
+                    <button className="bg-danger btn-regular">JOIN US</button>
                 </div>
+                </div>
+              
             </div>
 
             {/* OUR SERVICES DECLARATION */}
-            <div className="d-flex align-items-center justify-content-center mt-5 mb-3">
-                <div>
-                    <h1>WHAT WE PROVIDE</h1>
+            <div className="d-flex align-items-center justify-content-center mt-5 mb-3 container">
+                <div className="">
+                    <h1>OUR SERVICES</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat incidunt laudantium optio quis nesciunt id illo possimus facilis sit quae?</p>
                 </div>
             </div>

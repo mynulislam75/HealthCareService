@@ -13,7 +13,7 @@ const Navbar = () => {
            
 
             <div className="">
-                <h1>MEDIPATH</h1>
+                <img className="navbar-img" src="http://ad-din.org/wp-content/uploads/2017/10/adddin-logo-3.png" alt="" />
             </div>
 
             <div className="navlink-containe">

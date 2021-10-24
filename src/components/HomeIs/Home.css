@@ -26,16 +26,20 @@ description-text{
 }
 .description-text h1{
     letter-spacing: 5px;
-    padding-left:8px;
     color: green;
+    font-weight: 800;
 }
 
 .description-text p{
-    letter-spacing: 2px;
-    padding-left:8px;
-    line-height: 30px;
+    letter-spacing:1px;
+    line-height: 25px;
     color: green;
+    word-wrap: inherit;
 }
+.btn-regular{
+   border-radius: 8px;
+}
+
 .link-btn{
     text-decoration: none;
 }

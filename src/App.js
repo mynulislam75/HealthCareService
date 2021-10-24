@@ -16,6 +16,13 @@ function App() {
   return (
     <div className="App">
 
+      <div className="d-flex justify-content-center align-items-center mb-4 container">
+        <div>
+          <h2>AD-DIN HOSPITAL</h2>
+          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, facilis.</small>
+        </div>
+      </div>
+
       <AuthProvider>
         <BrowserRouter>
           <Navbar></Navbar>
