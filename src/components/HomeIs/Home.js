@@ -31,10 +31,10 @@ const Home = () => {
             </div>
 
             {/* OUR SERVICES DECLARATION */}
-            <div className="d-flex align-items-center justify-content-center mt-5 mb-3 container">
-                <div className="">
-                    <h1>OUR SERVICES</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat incidunt laudantium optio quis nesciunt id illo possimus facilis sit quae?</p>
+            <div className="d-flex align-items-center mt-5 mb-3 container">
+                <div className="container">
+                    <h1 className="text-success">OUR SERVICES</h1>
+                   <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, qui.</small>
                 </div>
             </div>
 
@@ -45,7 +45,7 @@ const Home = () => {
                 <div className="row">
                     {
                         services.map(service => <div className="col-md-6 col-lg-4">
-                            <div className="p-3 m-2 border">
+                            <div id="single-service" className="p-3 m-2 border">
 
                                 <div className="img-container">
                                     <img src={service.img} alt="" />

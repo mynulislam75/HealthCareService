@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import initializeAuhetication from '../Firebase/firebase.init';
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+import { useEffect } from 'react';
 
 
 initializeAuhetication();
@@ -13,13 +14,14 @@ const useFirebase = () => {
     const [password, setPassword] = useState({})
     const [error, setError] = useState({})
     const [isLogin, setIsLogin] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth();
     const provider = new GoogleAuthProvider();
 
     // getting email
     const handleEmail = (e) => {
-       setEmail(e.target.value)
+        setEmail(e.target.value)
     }
 
     // getting password
@@ -51,54 +53,75 @@ const useFirebase = () => {
 
     // CREATE NEW USER WITH EMAIL AND PASSWORD;
     const handleResigterWithEmail = (email, password) => {
+        setIsLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
-                const user=result.user;
+                const user = result.user;
                 setUser(result.user)
             })
             .catch(error => {
                 const errorMessage = error.message;
                 console.log(errorMessage)
             })
+            .finally(() => setIsLoading(false));
     }
 
     // LOG IN USING EMAIL AND PASSWORD
     const handleLoginWithEmail = (email, password) => {
+        setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
-                const user=result.user;
+                const user = result.user;
                 setUser(result.user)
             })
             .catch(error => {
                 const errorMessage = error.message;
                 console.log(errorMessage)
             })
+            .finally(() => setIsLoading(false));
     }
 
+
+    useEffect(() => {
+        const unsubscribed = onAuthStateChanged(auth, user => {
+            if (user) {
+                setUser(user);
+            }
+            else {
+                setUser({})
+            }
+            setIsLoading(false);
+        });
+        return () => unsubscribed;
+    }, [])
 
 
 
     // SIGN IN WITH GOOGLE
     const handleGoogleSignIn = () => {
-       return signInWithPopup(auth, provider)
-       .then(result => {
-        setUser(result.user)
-    })
+        setIsLoading(true);
+        return signInWithPopup(auth, provider)
+            .then(result => {
+                setUser(result.user)
+            })
+            .finally(() => setIsLoading(false));
     }
 
 
 
     // SIGNOUT
     const handleSignOut = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(() => {
                 setUser({})
             })
+            .finally(() => setIsLoading(false));
     }
 
 
     // RETURN FROM THIS FUNCTION
-    return { user, error, handleGoogleSignIn, handleSignOut, handleEmail, handlePassword, handleLoginWithEmail, handleResigterWithEmail, handleToggle, isLogin,handleRegistrationOrLogin }
+    return { user, error, handleGoogleSignIn, handleSignOut, handleEmail, handlePassword, handleLoginWithEmail, handleResigterWithEmail, handleToggle, isLogin, handleRegistrationOrLogin,isLoading }
 };
 
 export default useFirebase;

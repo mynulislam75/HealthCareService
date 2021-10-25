@@ -18,8 +18,8 @@ function App() {
 
       <div className="d-flex justify-content-center align-items-center mb-4 container">
         <div>
-          <h2>AD-DIN HOSPITAL</h2>
-          <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, facilis.</small>
+          <h2><span className="text-success"> AD-DIN</span> <span className="text-danger">HOSPITAL</span> </h2>
+
         </div>
       </div>
 

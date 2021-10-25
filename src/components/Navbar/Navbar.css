@@ -1,10 +1,14 @@
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: space-between;
     background-color: beige;
     line-height: 10px;
     justify-items: center;
     align-items: center;
+} */
+
+.custom-nav{
+    line-height: 40px;
 }
 
 .navbar-img{
@@ -14,4 +18,5 @@
 .navlink{
     text-decoration: none;
     margin-right: 10px;
+    font-size: 18px;
 }

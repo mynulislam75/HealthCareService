@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import './Doctors.css'
 const Doctors = () => {
 
     const [extraService, setExtraService] = useState([])
@@ -10,13 +10,20 @@ const Doctors = () => {
     }, [])
     return (
         <div className="container">
+
+            <div className="d-flex align-items-center mt-5 mb-3 container">
+                <div className="container">
+                    <h1 className="text-success">OUR SERVICES</h1>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, qui.</small>
+                </div>
+            </div>
             <div className="row">
 
 
                 {
                     extraService.map(singleExtraService =>
                         <div className="col-md-6 col-lg-4">
-                            <div className="p-3 m-2 border">
+                            <div id="single-doctors" className="p-3 m-2 border">
                                 <div className="img-container">
                                     <img className="img-fluid" src={singleExtraService.img} alt="" />
                                 </div>
