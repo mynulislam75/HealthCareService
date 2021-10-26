@@ -22,7 +22,7 @@ const Navbar = () => {
                         <NavLink className="navlink" to="/home">HOME</NavLink>
                         <NavLink className="navlink" to="/services">SERVICES</NavLink>
                         <NavLink className="navlink" to="/doctors">DOCTORS</NavLink>
-                        <NavLink className="navlink" to="/contact">CONTACTS</NavLink>
+                        <NavLink className="navlink" to="/about">ABOUT</NavLink>
                         {
                             user.email ? <button className="logout-btn bg-success" onClick={handleSignOut}>LOG OUT</button>
                                 :

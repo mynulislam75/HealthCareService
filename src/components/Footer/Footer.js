@@ -15,18 +15,18 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-4 col-md-4 col-sm-12">
                         <div className="m-4">
-                           <p>About</p>
-                           <p>Contacts</p>
-                           <p>Privacy and Policy</p>
-                           <p>Terms and Condition</p>
+                            <p>About</p>
+                            <p>Contacts</p>
+                            <p>Privacy and Policy</p>
+                            <p>Terms and Condition</p>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-4 col-sm-12">
                         <div className="m-4">
                             <h5>FOLLOW US</h5>
-                            <p>FACEBOOK</p>
-                            <p>LINKDIN</p>
-                            <p>TWITTER</p>
+                                <p>FACEBOOK</p>
+                                <p>LINKDIN</p>
+                                <p>TWITTER</p>
                         </div>
                     </div>
                 </div>

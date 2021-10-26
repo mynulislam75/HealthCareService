@@ -16,8 +16,6 @@ const Login = () => {
 
                     <h2>Please {isLogin ? 'Resigter' : 'Login'}</h2>
 
-                    <h2>{user.email}</h2>
-
                     <label htmlFor="Email">Email</label>
                     <input onBlur={handleEmail} type="text" name="email" placeholder="Enter Your Email" id="" />
                     <br />

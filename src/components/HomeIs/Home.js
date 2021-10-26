@@ -35,7 +35,7 @@ const Home = () => {
             <div className="d-flex align-items-center mt-5 mb-3 container">
                 <div className="container">
                     <h1 className="text-success">OUR SERVICES</h1>
-                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, qui.</small>
+                    <small>Your desire,our commitment</small>
                 </div>
             </div>
 
