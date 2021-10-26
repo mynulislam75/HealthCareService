@@ -6,20 +6,6 @@ const Login = () => {
 
     const { handleGoogleSignIn, user, handleEmail, handlePassword, handleResigterWithEmail, handleLoginWithEmail, handleToggle, isLogin, handleRegistrationOrLogin } = useAuth();
 
-
-    // REDIRECTING PAGES CODE
-    // const location = useLocation();
-    // const history = useHistory();
-    // const redirect_uri = location.state?.from || '/services/:serviceId';
-
-    // const handleGoogleLogin = () => {
-    //     handleGoogleSignIn()
-    //         .then(result => {
-    //             history.push(redirect_uri);
-    //         })
-    // }
-
-
     return (
         <div className="login">
 

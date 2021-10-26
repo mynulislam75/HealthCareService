@@ -53,7 +53,6 @@ const Home = () => {
                                 </div>
                                 <div>
                                     <h2>{service.name}</h2>
-                                    <h4>{service.price}</h4>
                                     <p>{service.description}</p>
                                     <Link className="link-btn text-white rounded" to={`/services/${service.name}`}>SEE DETAILS</Link>
                                 </div>

@@ -11,6 +11,7 @@ import Singleservice from './components/Singleservice/Singleservice';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Footer from './components/Footer/Footer';
+import Errorfind from './components/Error/Errorfind';
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="*">
+              <Errorfind></Errorfind>
             </Route>
           </Switch>
         </BrowserRouter>
