@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
 
-            <div className="d-flex bg-success justify-content-around justify-content-sm-around align-items-center">
+            <div id="navbar-id" className="d-flex justify-content-around justify-content-sm-around align-items-center">
 
                 <div className="d-flex align-items-center">
                     <img className="navbar-img" src="http://ad-din.org/wp-content/uploads/2017/10/adddin-logo-3.png" alt="" />

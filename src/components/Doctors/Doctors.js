@@ -14,30 +14,8 @@ const Doctors = () => {
             <div className="row">
                 <div className="col-md-6 col-lg-4">
                     <div id="single-doctors" className="p-3 m-2 border">
-                        <h2>Dr. Mohammad Azizul Haque (Azad)</h2>
+                        <h2>Dr. Mohammad Azizul</h2>
                         <p>EYE SPECIALISTS</p>
-                        <small>9AM-12PM</small>
-                        <br />
-                        <small>AD-Din Hospital,Room Number:122</small>
-                        <br />
-                        <small>MBBS,EYE SERGEON</small>
-                    </div>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                    <div id="single-doctors" className="p-3 m-2 border">
-                        <h2>AHMED ALI</h2>
-                        <p>EYE SPECIALISTS</p>
-                        <small>9AM-12PM</small>
-                        <br />
-                        <small>AD-Din Hospital,Room Number:122</small>
-                        <br />
-                        <small>MBBS,EYE SERGEON</small>
-                    </div>
-                </div>
-                <div className="col-md-6 col-lg-4">
-                    <div id="single-doctors" className="p-3 m-2 border">
-                        <h2>AHMED ALI</h2>
-                        <p>CARDIOLOGIST</p>
                         <small>9AM-12PM</small>
                         <br />
                         <small>AD-Din Hospital,Room Number:122</small>
@@ -53,40 +31,62 @@ const Doctors = () => {
                         <br />
                         <small>AD-Din Hospital,Room Number:122</small>
                         <br />
-                        <small>MBBS,EYE SERGEON</small>
+                        <small>MBBS,DHAKA MEDICAL COLLEGE</small>
+                    </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                    <div id="single-doctors" className="p-3 m-2 border">
+                        <h2>AHMED ALI</h2>
+                        <p>CARDIOLOGIST</p>
+                        <small>10AM-12PM</small>
+                        <br />
+                        <small>AD-Din Hospital,Room Number:112</small>
+                        <br />
+                        <small>MBBS,RAJSHAHI MEDICAL COLLEGE</small>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
                     <div id="single-doctors" className="p-3 m-2 border">
                         <h2>AHMED ALI</h2>
                         <p>EYE SPECIALISTS</p>
-                        <small>9AM-12PM</small>
+                        <small>8AM-12PM</small>
                         <br />
-                        <small>AD-Din Hospital,Room Number:122</small>
+                        <small>AD-Din Hospital,Room Number:132</small>
                         <br />
-                        <small>MBBS,EYE SERGEON</small>
+                        <small>MBBS,RAJSHAHI MEDICAL COLLEGE</small>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
                     <div id="single-doctors" className="p-3 m-2 border">
                         <h2>AHMED ALI</h2>
-                        <p>EYE SPECIALISTS</p>
+                        <p>NUROLOGIST</p>
                         <small>9AM-12PM</small>
                         <br />
                         <small>AD-Din Hospital,Room Number:122</small>
                         <br />
-                        <small>MBBS,EYE SERGEON</small>
+                        <small>MBBS,RAJSHAHI MEDICAL COLLEGE</small>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-4">
                     <div id="single-doctors" className="p-3 m-2 border">
                         <h2>AHMED ALI</h2>
-                        <p>EYE SPECIALISTS</p>
-                        <small>9AM-12PM</small>
+                        <p>EUROLOGIST</p>
+                        <small>10AM-12PM</small>
                         <br />
-                        <small>AD-Din Hospital,Room Number:122</small>
+                        <small>AD-Din Hospital,Room Number:192</small>
                         <br />
-                        <small>MBBS,EYE SERGEON</small>
+                     
+                    </div>
+                </div>
+                <div className="col-md-6 col-lg-4">
+                    <div id="single-doctors" className="p-3 m-2 border">
+                        <h2>AHMED ALI</h2>
+                        <p>ENT</p>
+                        <small>10AM-12PM</small>
+                        <br />
+                        <small>AD-Din Hospital,Room Number:127</small>
+                        <br />
+                        
                     </div>
                 </div>
 

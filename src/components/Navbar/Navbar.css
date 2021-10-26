@@ -6,6 +6,11 @@
     justify-items: center;
     align-items: center;
 } */
+
+#navbar-id{
+    padding: 15px;
+    background-color: lightblue;
+}
 .custom-nav{
     line-height: 40px;
 }
