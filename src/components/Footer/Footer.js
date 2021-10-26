@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <div className="footer-container bg-success">
+            <div className="footer-container bg-success mt-5">
                 <div className="row">
                     <div className="col-lg-4 col-md-4 col-sm-12">
                         <div className="m-4">
@@ -24,11 +24,9 @@ const Footer = () => {
                     <div className="col-lg-4 col-md-4 col-sm-12">
                         <div className="m-4">
                             <h5>FOLLOW US</h5>
-                            <div className="d-flex">
-                            <i class="fab fa-twitter me-2"></i>
-                            <i class="fab fa-facebook me-2"></i>
-                            <i class="fab fa-linkedin me-2"></i>
-                            </div>
+                            <p>FACEBOOK</p>
+                            <p>LINKDIN</p>
+                            <p>TWITTER</p>
                         </div>
                     </div>
                 </div>

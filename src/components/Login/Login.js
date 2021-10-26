@@ -38,7 +38,7 @@ const Login = () => {
                     <label htmlFor="Password">Password</label>
                     <input onBlur={handlePassword} type="password" name="" placeholder="Enter your Password" id="" />
                     <br />
-                    <button type="submit">
+                    <button className="sign-btn" type="submit">
                         {isLogin ? 'Register' : 'Login'}
                     </button>
 
@@ -50,7 +50,7 @@ const Login = () => {
                     </div>
 
 
-                    <button onClick={handleGoogleSignIn}>Google Sign In</button>
+                    <button className="sign-btn" onClick={handleGoogleSignIn}>Google Sign In</button>
                 </div>
             </form>
 

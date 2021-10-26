@@ -18,8 +18,17 @@ const Singleservice = () => {
     console.log(findData)
 
     return (
-        <div>
-            <h1>name:{findData?.name}</h1>
+        <div className="container">
+            <h4>Single Service Details</h4>
+            <div className="border d-flex justify-content-center p-4">
+
+                <div>
+                    <h1>{findData?.name}</h1>
+                    <br />
+                    <p>{findData?.more}</p>
+                </div>
+            </div>
+
         </div>
     );
 };

@@ -6,7 +6,6 @@
     justify-items: center;
     align-items: center;
 } */
-
 .custom-nav{
     line-height: 40px;
 }
@@ -19,4 +18,9 @@
     text-decoration: none;
     margin-right: 10px;
     font-size: 18px;
+}
+.logout-bt{
+    border: none;
+    background-color: greenyellow;
+
 }

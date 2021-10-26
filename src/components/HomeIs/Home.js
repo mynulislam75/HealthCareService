@@ -21,20 +21,21 @@ const Home = () => {
 
             <div className="banner-section">
                 <div className="row container">
-                <div className="description-text position-absolute bottom-0 p-3 col-lg-6 col-md-6 col-sm-6">
-                    <h1>WE HAVE OUR OWN SOMETHING</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, praesentium. Ad, nam! Quas at ipsa, labore iste aliquid quae aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odit voluptatem nihil corporis velit praesentium quo aspernatur et cum ipsa consequatur minima, recusandae adipisci exercitationem, aperiam vitae doloribus voluptates labore.</p>
-                    <button className="bg-danger btn-regular">JOIN US</button>
+                    <div className="description-text position-absolute bottom-0 p-3 col-lg-6 col-md-6 col-sm-6">
+                        <h1>Specialties, Services & Treatments</h1>
+                        <p>We provide a full range of family care and more than 40 specialty and subspecialty health care services for patients in our service area.
+                            Explore specialized care or select a particular service to learn more.</p>
+                        <button className="bg-success btn-regular">JOIN US</button>
+                    </div>
                 </div>
-                </div>
-              
+
             </div>
 
             {/* OUR SERVICES DECLARATION */}
             <div className="d-flex align-items-center mt-5 mb-3 container">
                 <div className="container">
                     <h1 className="text-success">OUR SERVICES</h1>
-                   <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, qui.</small>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, qui.</small>
                 </div>
             </div>
 
@@ -45,16 +46,16 @@ const Home = () => {
                 <div className="row">
                     {
                         services.map(service => <div className="col-md-6 col-lg-4">
-                            <div id="single-service" className="p-3 m-2 border">
+                            <div id="single-service" className="p-4 m-4 h-100 border">
 
-                                <div className="img-container">
-                                    <img src={service.img} alt="" />
+                                <div>
+                                    <img className="img-fluid" src={service.img} alt="" />
                                 </div>
                                 <div>
                                     <h2>{service.name}</h2>
                                     <h4>{service.price}</h4>
                                     <p>{service.description}</p>
-                                    <Link className="link-btn" to={`/services/${service.name}`}>SEE DETAILS</Link>
+                                    <Link className="link-btn text-white rounded" to={`/services/${service.name}`}>SEE DETAILS</Link>
                                 </div>
 
 
